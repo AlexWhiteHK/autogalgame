@@ -76,34 +76,32 @@ UI 布局
 
 快速仰头保持 2 秒锁定系统
 
-配置选项
+### 配置选项
 核心参数表
 参数	默认值	范围	作用域
 ear_threshold	0.21	0.15-0.30	闭眼判定阈值
 activation_frames	1	1-5	动作触发帧数
 nod_required_frames	10	5-15	点头持续帧阈值
 lock_cooldown	5	3-10	锁屏冷却时间
-高级配置
+### 高级配置
 python
 复制
-# 在 BlinkControlApp 类中修改以下参数
+###  在 BlinkControlApp 类中修改以下参数
 self.pitch_threshold = 25     # 点头识别角度（°）
 self.roll_threshold = 30      # 转头过滤阈值（°）
 self.img_width = 640          # 摄像头水平分辨率
 注意事项
 环境要求
 光照强度：300-1000 lux
-
 避免强背光/侧光环境
-
 摄像头帧率需 ≥24 FPS
 
-佩戴建议
+### 佩戴建议
 框架眼镜：建议降低 EAR 阈值 0.02-0.05
 美瞳用户：可能需要重新校准参数
 刘海遮挡：确保眼部区域完全可见
 
-健康提示
+### 健康提示
 ❗ 连续使用每 30 分钟应休息 5 分钟
 ❗ 出现眼干、疲劳等不适请立即停止
 
